@@ -1357,7 +1357,7 @@ function set_username($username, $email) {
     if (isset($CFG->adobeconnect_email_login) and !empty($CFG->adobeconnect_email_login)) {
         return $email;
     } else {
-        return $username;
+        return '{'.$username.'}';
     }
 }
 
